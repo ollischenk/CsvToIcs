@@ -30,7 +30,7 @@ public class Main {
         String csvFile="/Users/osc/Documents/IntelliJProjects/CsvToIcs/ics/AlteHerren.csv";
         ReadCsv rc = new ReadCsv(csvFile);
         List<List<String>> records = rc.getRecords();
-        
+
 
         for(int i=0; i<records.size();i++){
             new WriteIcs(records.get(i));
